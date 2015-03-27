@@ -1,0 +1,65 @@
+*{
+	margin: 0; 
+	padding: 0; 
+	list-style: none;
+}
+.container{
+	width:600px;
+	 margin: 20px auto;
+}
+h2{
+	text-align: center;
+}
+#ul1{
+	position: relative;
+	width:600px; 
+	height: 400px; 
+	overflow:auto; 
+	border: 1px solid #b3c7e1; 
+	padding: 10px; 
+	margin: 10px 0;
+}
+#ul1 li{
+	float:left; 
+	width:350px;
+	margin: 15px 0; 
+	padding: 10px; 
+	background-color: #EEEEEE;
+}
+#ul1 li.self{
+	float: right;
+	background-color: #0b97c4
+}
+#ul1 li.who,#ul1 li.typing{
+	width: 95%; 
+	text-align: center; 
+	font-size: 14px; 
+	font-weight: bold; 
+	color: #19469D; 
+	background: none; 
+	margin: 0;
+}
+#ul1 li.typing{
+	color:blue;
+}
+#ul1 li.who_online {
+	position: absolute;
+	bottom: 0;
+}
+#ul1 li span{
+	float: right; 
+	font-size: 14px;
+}
+#ul1 li p{
+	padding: 10px 5px;
+}
+textarea{
+	width: 80%; 
+	float: left;
+}
+#btn1{
+	width: 15%; 
+	margin-top: 10px; 
+	height: 60px; 
+	float: right;
+}
