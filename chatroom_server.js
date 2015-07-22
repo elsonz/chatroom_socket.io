@@ -41,7 +41,6 @@ var server = http.createServer(function(req, res){
     // 流的好处:解决了文件太大占用内存过多；读写时操作峰值太高的问题
     var rs = fs.createReadStream(__dirname+req.url);
     
-    // 流的错误无法用try和catch捕获，必须用error事件
     rs.on('error', function(){
         res.writeHead(404, {});
         res.end('404');
